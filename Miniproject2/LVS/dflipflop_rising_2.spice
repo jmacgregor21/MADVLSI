@@ -1,0 +1,21 @@
+* SPICE3 file created from dflipflop_rising_2.ext - technology: sky130A
+
+*.subckt dflipflop_rising_2 clk VN Db VP D Q Qb
+X0 VP a_30_870# a_n20_1360# VP sky130_fd_pr__pfet_01v8 ad=2e+12p pd=1.2e+07u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 a_30_450# clk VN VN sky130_fd_pr__nfet_01v8 ad=2.5e+11p pd=2.5e+06u as=2e+12p ps=1.2e+07u w=1e+06u l=150000u
+X2 Q Qb a_500_1250# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X3 VN Qb Q VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X4 a_n20_1360# clk D VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X5 VP a_n20_1360# a_30_870# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X6 Q clk a_n20_1360# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X7 a_30_870# a_n20_1360# a_n10_n20# VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X8 a_n10_n20# clk VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 Qb Q a_500_870# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X10 a_500_1250# clk VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 VN Q Qb VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X12 a_n20_1360# a_30_870# a_30_450# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X13 a_500_870# clk VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X14 a_30_870# clk Db VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X15 Qb clk a_30_870# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+*.ends
+

@@ -1,0 +1,37 @@
+magic
+tech sky130A
+timestamp 1614987782
+<< nwell >>
+rect 275 805 540 865
+rect 785 805 1055 865
+rect 1300 805 1580 865
+rect 1805 805 2085 865
+rect 25 510 30 625
+<< metal1 >>
+rect 275 805 540 865
+rect 785 805 1055 865
+rect 1300 805 1580 865
+rect 1805 805 2085 865
+rect 25 510 30 625
+use dflipflop_rising_2  dflipflop_rising_2_0
+timestamp 1614987782
+transform 1 0 105 0 1 80
+box -90 -80 435 800
+use dflipflop_rising_2  dflipflop_rising_2_1
+timestamp 1614987782
+transform 1 0 620 0 1 80
+box -90 -80 435 800
+use dflipflop_rising_2  dflipflop_rising_2_2
+timestamp 1614987782
+transform 1 0 1135 0 1 80
+box -90 -80 435 800
+use dflipflop_rising_2  dflipflop_rising_2_3
+timestamp 1614987782
+transform 1 0 1650 0 1 80
+box -90 -80 435 800
+<< labels >>
+rlabel space 2085 680 2085 680 3 Qout
+port 5 e
+rlabel space 2085 470 2085 470 3 Qoutb
+port 6 e
+<< end >>

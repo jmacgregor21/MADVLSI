@@ -1,0 +1,43 @@
+* SPICE3 file created from /home/madvlsi/Documents/Miniproject2/sreg_2.ext - technology: sky130A
+
+.subckt dflipflop_rising_2 clk VN Db VP D Q Qb
+X0 VP a_30_870# a_n20_1360# VP sky130_fd_pr__pfet_01v8 ad=2e+12p pd=1.2e+07u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 a_30_450# clk VN VN sky130_fd_pr__nfet_01v8 ad=2.5e+11p pd=2.5e+06u as=2e+12p ps=1.2e+07u w=1e+06u l=150000u
+X2 Q Qb a_500_1250# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X3 VN Qb Q VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X4 a_n20_1360# clk D VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X5 VP a_n20_1360# a_30_870# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X6 Q clk a_n20_1360# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X7 a_30_870# a_n20_1360# a_n10_n20# VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X8 a_n10_n20# clk VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 Qb Q a_500_870# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X10 a_500_1250# clk VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 VN Q Qb VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X12 a_n20_1360# a_30_870# a_30_450# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X13 a_500_870# clk VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X14 a_30_870# clk Db VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X15 Qb clk a_30_870# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+C0 a_n20_1360# VN 2.23fF
+C1 Q VN 2.23fF
+C2 VP VN 3.48fF
+.ends
+
+.subckt inverter_sreg A Y VN VP a_130_0# w_n40_380#
+X0 w_n40_380# A Y w_n40_380# sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 a_130_0# A Y a_130_0# sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+.ends
+
+.subckt home/madvlsi/Documents/Miniproject2/sreg_2 D clk
+Xdflipflop_rising_2_0 clk VSUBS inverter_sreg_0/Y inverter_sreg_0/VP D dflipflop_rising_2_1/D
++ dflipflop_rising_2_1/Db dflipflop_rising_2
+Xdflipflop_rising_2_1 clk VSUBS dflipflop_rising_2_1/Db inverter_sreg_0/VP dflipflop_rising_2_1/D
++ dflipflop_rising_2_2/D dflipflop_rising_2_2/Db dflipflop_rising_2
+Xdflipflop_rising_2_2 clk VSUBS dflipflop_rising_2_2/Db inverter_sreg_0/VP dflipflop_rising_2_2/D
++ dflipflop_rising_2_3/D dflipflop_rising_2_3/Db dflipflop_rising_2
+Xdflipflop_rising_2_3 clk VSUBS dflipflop_rising_2_3/Db inverter_sreg_0/VP dflipflop_rising_2_3/D
++ dflipflop_rising_2_3/Q dflipflop_rising_2_3/Qb dflipflop_rising_2
+Xinverter_sreg_0 D inverter_sreg_0/Y VSUBS inverter_sreg_0/VP VSUBS inverter_sreg_0/VP
++ inverter_sreg
+C0 inverter_sreg_0/VP VSUBS 2.34fF
+.ends
+

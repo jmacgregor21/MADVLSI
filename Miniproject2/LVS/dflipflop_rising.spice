@@ -1,0 +1,21 @@
+* SPICE3 file created from /home/madvlsi/Documents/Miniproject2/dflipflop_rising.ext - technology: sky130A
+
+.subckt home/madvlsi/Documents/Miniproject2/dflipflop_rising clk VN Db VP D Qb
+X0 a_30_450# clk VN VN sky130_fd_pr__nfet_01v8 ad=2.5e+11p pd=2.5e+06u as=3e+12p ps=1.8e+07u w=1e+06u l=150000u
+X1 VP Qb a_500_1250# VP sky130_fd_pr__pfet_01v8 ad=2.5e+12p pd=1.5e+07u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X2 VN Qb VP VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.5e+12p ps=9e+06u w=1e+06u l=150000u
+X3 VP VN a_30_1260# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X4 VP a_40_n50# VN VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.5e+12p ps=9e+06u w=1e+06u l=150000u
+X5 VP clk VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 VN a_40_n50# a_n10_n20# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X7 a_30_1260# clk D VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X8 a_n10_n20# clk VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 Qb VP a_500_870# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=2.5e+11p ps=2.5e+06u w=1e+06u l=150000u
+X10 a_500_1250# clk VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 VN VP Qb VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X12 a_110_450# VN a_30_450# VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X13 a_500_870# clk VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X14 VN clk Db VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X15 Qb clk a_40_n50# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+.ends
+

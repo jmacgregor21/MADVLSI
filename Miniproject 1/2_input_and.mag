@@ -1,0 +1,8 @@
+magic
+tech sky130A
+timestamp 1613443904
+use nandgate  nandgate_0
+timestamp 1613443682
+transform 1 0 25 0 1 0
+box -25 0 385 345
+<< end >>

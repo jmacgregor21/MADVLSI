@@ -1,0 +1,26 @@
+magic
+tech sky130A
+timestamp 1613513500
+<< locali >>
+rect 600 35 615 55
+rect 105 0 125 15
+rect 170 0 190 15
+<< metal1 >>
+rect 0 230 20 320
+rect 0 75 20 165
+rect 275 75 410 165
+use inverter1  inverter1_0
+timestamp 1613444127
+transform 1 0 530 0 1 70
+box -120 -55 85 275
+use nandgate  nandgate_0
+timestamp 1613443682
+transform 1 0 25 0 1 0
+box -25 0 385 345
+<< labels >>
+rlabel locali 115 0 115 0 5 A
+rlabel locali 180 0 180 0 5 B
+rlabel locali 615 45 615 45 3 Y
+rlabel metal1 0 120 0 120 7 VN
+rlabel metal1 0 280 0 280 7 VP
+<< end >>

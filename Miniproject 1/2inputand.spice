@@ -1,0 +1,21 @@
+* SPICE3 file created from 2inputand.ext - technology: sky130A
+
+.subckt inverter1 A VN VP Y
+X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+.ends
+
+.subckt nandgate A B Y VN VP
+X0 VP B Y VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 Y B a_220_140# VN sky130_fd_pr__nfet_01v8 ad=5.5e+11p pd=3.1e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X3 a_220_140# A VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+.ends
+
+
+* Top level circuit 2inputand
+
+Xinverter1_0 nandgate_0/Y VN VP Y inverter1
+Xnandgate_0 A B nandgate_0/Y VN VP nandgate
+.end
+

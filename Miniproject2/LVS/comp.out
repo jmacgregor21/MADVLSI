@@ -1,0 +1,20 @@
+Flattening unmatched subcell dflipflop in circuit shift_reg_lvs.spice (0)(4 instances)
+Flattening unmatched subcell inverter in circuit shift_reg_lvs.spice (0)(1 instance)
+Flattening unmatched subcell dflipflop_rising_2 in circuit shift_register.spice (1)(4 instances)
+Flattening unmatched subcell inverter_sreg in circuit shift_register.spice (1)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: shift_reg_lvs.spice             |Circuit 2: shift_register.spice            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (33)               |sky130_fd_pr__nfet_01v8 (33)               
+sky130_fd_pr__pfet_01v8 (33)               |sky130_fd_pr__pfet_01v8 (33)               
+Number of devices: 66                      |Number of devices: 66                      
+Number of nets: 37                         |Number of nets: 37                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes shift_reg_lvs.spice and shift_register.spice are equivalent.
+Circuits match uniquely.

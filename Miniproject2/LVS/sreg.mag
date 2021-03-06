@@ -1,0 +1,20 @@
+magic
+tech sky130A
+timestamp 1614787212
+use dflipflop_rising  dflipflop_rising_3
+timestamp 1614784726
+transform 1 0 1630 0 1 80
+box -85 -80 435 745
+use dflipflop_rising  dflipflop_rising_2
+timestamp 1614784726
+transform 1 0 1115 0 1 80
+box -85 -80 435 745
+use dflipflop_rising  dflipflop_rising_1
+timestamp 1614784726
+transform 1 0 600 0 1 80
+box -85 -80 435 745
+use dflipflop_rising  dflipflop_rising_0
+timestamp 1614784726
+transform 1 0 85 0 1 80
+box -85 -80 435 745
+<< end >>

@@ -1,0 +1,126 @@
+timestamp 1614987782
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use dflipflop_rising_2 dflipflop_rising_2_3 1 0 3210 0 1 -590
+use dflipflop_rising_2 dflipflop_rising_2_2 1 0 2180 0 1 -590
+use dflipflop_rising_2 dflipflop_rising_2_1 1 0 1150 0 1 -590
+use dflipflop_rising_2 dflipflop_rising_2_0 1 0 120 0 1 -590
+use inverter_sreg inverter_sreg_0 1 0 -382 0 1 -140
+port "clk" 2 -50 -710 -50 -710 m1
+port "Qout" 3 4080 610 4080 610 li
+port "D" 1 -390 -190 -390 -190 p
+port "Qoutb" 4 4080 190 4080 190 p
+node "clk" 1 42.04 -50 -710 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 200 0 0 0 0 0 0 0 0 0 0
+node "Qout" 24 33.74 4080 610 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800 120 0 0 0 0 0 0 0 0 0 0 0 0
+node "D" 72 29.09 -390 -190 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 600 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qoutb" 72 29.09 4080 190 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 600 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "dflipflop_rising_2_1/VN" "dflipflop_rising_2_1/a_30_870#" 10.2414
+cap "dflipflop_rising_2_1/a_30_870#" "dflipflop_rising_2_1/a_n140_1360#" 32.5749
+cap "dflipflop_rising_2_1/VP" "dflipflop_rising_2_1/a_n140_1360#" 4.242
+cap "dflipflop_rising_2_0/a_30_870#" "dflipflop_rising_2_0/a_n140_1360#" 4.46004
+cap "dflipflop_rising_2_1/VN" "dflipflop_rising_2_1/a_n140_1360#" 39.2806
+cap "dflipflop_rising_2_1/a_30_870#" "dflipflop_rising_2_1/Db" 7.92627
+cap "dflipflop_rising_2_1/VP" "dflipflop_rising_2_1/Db" -5.68434e-14
+cap "dflipflop_rising_2_1/VP" "dflipflop_rising_2_0/a_n140_1360#" 13.586
+cap "dflipflop_rising_2_1/Db" "dflipflop_rising_2_1/VN" 8.48571
+cap "dflipflop_rising_2_0/a_n140_1360#" "dflipflop_rising_2_1/VN" 7.05
+cap "dflipflop_rising_2_0/a_30_870#" "dflipflop_rising_2_0/Db" 13.0882
+cap "dflipflop_rising_2_1/a_n140_1360#" "dflipflop_rising_2_1/a_30_870#" 2.12903
+cap "dflipflop_rising_2_1/a_n140_1360#" "dflipflop_rising_2_1/clk" 3.83333
+cap "dflipflop_rising_2_1/VN" "dflipflop_rising_2_0/Db" 18.4472
+cap "dflipflop_rising_2_1/VP" "dflipflop_rising_2_0/Db" 64.5652
+cap "dflipflop_rising_2_1/Db" "dflipflop_rising_2_1/clk" 26.4529
+cap "dflipflop_rising_2_0/a_n140_1360#" "dflipflop_rising_2_1/clk" 28.3937
+cap "dflipflop_rising_2_1/Db" "dflipflop_rising_2_1/a_n140_1360#" 62.0796
+cap "dflipflop_rising_2_0/Db" "dflipflop_rising_2_1/clk" 5.98958
+cap "dflipflop_rising_2_0/a_n140_1360#" "dflipflop_rising_2_0/Db" 4.75207
+cap "dflipflop_rising_2_1/a_n20_1360#" "dflipflop_rising_2_1/a_n140_1360#" 18.771
+cap "dflipflop_rising_2_1/VN" "dflipflop_rising_2_0/a_n20_1360#" 19.6689
+cap "dflipflop_rising_2_1/a_n20_1360#" "dflipflop_rising_2_1/Db" 8.97842
+cap "dflipflop_rising_2_0/a_30_870#" "dflipflop_rising_2_1/VN" 1.13687e-13
+cap "dflipflop_rising_2_1/VP" "dflipflop_rising_2_0/a_30_870#" 26.7568
+cap "dflipflop_rising_2_1/VP" "dflipflop_rising_2_1/VN" -4.5
+cap "dflipflop_rising_2_2/VN" "dflipflop_rising_2_1/a_n140_1360#" 39.2806
+cap "dflipflop_rising_2_1/Db" "dflipflop_rising_2_1/a_n140_1360#" 62.0796
+cap "dflipflop_rising_2_2/VP" "dflipflop_rising_2_2/Db" -1.7053e-13
+cap "dflipflop_rising_2_2/a_30_870#" "dflipflop_rising_2_2/VN" 20.4828
+cap "dflipflop_rising_2_2/a_n20_1360#" "dflipflop_rising_2_2/Db" 17.9568
+cap "dflipflop_rising_2_2/VP" "dflipflop_rising_2_2/a_n140_1360#" 6.48
+cap "dflipflop_rising_2_1/Db" "dflipflop_rising_2_1/a_n20_1360#" 8.97842
+cap "dflipflop_rising_2_2/a_n20_1360#" "dflipflop_rising_2_2/a_n140_1360#" 37.5419
+cap "dflipflop_rising_2_1/a_30_870#" "dflipflop_rising_2_1/a_n140_1360#" 34.7039
+cap "dflipflop_rising_2_2/clk" "dflipflop_rising_2_2/VN" -15
+cap "dflipflop_rising_2_2/a_30_870#" "dflipflop_rising_2_2/Db" 15.8525
+cap "dflipflop_rising_2_1/Db" "dflipflop_rising_2_2/clk" 26.4529
+cap "dflipflop_rising_2_2/a_30_870#" "dflipflop_rising_2_2/a_n140_1360#" 69.4078
+cap "dflipflop_rising_2_2/clk" "dflipflop_rising_2_2/Db" 52.9057
+cap "dflipflop_rising_2_1/Db" "dflipflop_rising_2_2/VN" 8.48571
+cap "dflipflop_rising_2_2/clk" "dflipflop_rising_2_2/a_n140_1360#" 7.66667
+cap "dflipflop_rising_2_2/VN" "dflipflop_rising_2_2/Db" 16.9714
+cap "dflipflop_rising_2_2/a_n140_1360#" "dflipflop_rising_2_2/VN" 78.5613
+cap "dflipflop_rising_2_1/a_30_870#" "dflipflop_rising_2_2/VN" 10.2414
+cap "dflipflop_rising_2_1/Db" "dflipflop_rising_2_1/a_30_870#" 7.92627
+cap "dflipflop_rising_2_2/VP" "dflipflop_rising_2_1/a_n140_1360#" 5.998
+cap "dflipflop_rising_2_2/a_n140_1360#" "dflipflop_rising_2_2/Db" 124.159
+cap "dflipflop_rising_2_1/a_n20_1360#" "dflipflop_rising_2_1/a_n140_1360#" 18.771
+cap "dflipflop_rising_2_2/clk" "dflipflop_rising_2_2/VP" 3.55271e-14
+cap "dflipflop_rising_2_2/clk" "dflipflop_rising_2_1/a_n140_1360#" 3.83333
+cap "dflipflop_rising_2_2/VP" "dflipflop_rising_2_2/VN" -5
+cap "dflipflop_rising_2_3/VP" "dflipflop_rising_2_2/a_n140_1360#" 1.70103
+cap "dflipflop_rising_2_3/VN" "dflipflop_rising_2_2/a_n20_1360#" -48.51
+cap "dflipflop_rising_2_3/VP" "dflipflop_rising_2_3/clk" 2.84217e-14
+cap "dflipflop_rising_2_3/a_n140_1360#" "dflipflop_rising_2_3/clk" 7.66667
+cap "dflipflop_rising_2_3/VN" "dflipflop_rising_2_3/Db" 16.9714
+cap "dflipflop_rising_2_2/a_n140_1360#" "dflipflop_rising_2_2/a_n20_1360#" 1.70103
+cap "dflipflop_rising_2_2/a_30_870#" "dflipflop_rising_2_3/VN" -9.735
+cap "dflipflop_rising_2_3/a_30_870#" "dflipflop_rising_2_3/Db" 15.8525
+cap "dflipflop_rising_2_3/VP" "dflipflop_rising_2_3/a_n140_1360#" 6.48
+cap "dflipflop_rising_2_3/a_n20_1360#" "dflipflop_rising_2_3/a_n140_1360#" 37.5419
+cap "dflipflop_rising_2_3/a_30_870#" "dflipflop_rising_2_3/VN" 20.4828
+cap "dflipflop_rising_2_3/clk" "dflipflop_rising_2_3/Db" 52.9057
+cap "dflipflop_rising_2_2/a_30_870#" "dflipflop_rising_2_2/a_n140_1360#" 2.55155
+cap "dflipflop_rising_2_3/VP" "dflipflop_rising_2_2/a_n20_1360#" -5.405
+cap "dflipflop_rising_2_3/VN" "dflipflop_rising_2_3/clk" -7.5
+cap "dflipflop_rising_2_3/VP" "dflipflop_rising_2_3/Db" -1.42109e-13
+cap "dflipflop_rising_2_3/a_n20_1360#" "dflipflop_rising_2_3/Db" 17.9568
+cap "dflipflop_rising_2_3/a_n140_1360#" "dflipflop_rising_2_3/Db" 124.159
+cap "dflipflop_rising_2_3/VP" "dflipflop_rising_2_3/VN" -2.5
+cap "dflipflop_rising_2_3/VN" "dflipflop_rising_2_3/a_n140_1360#" 78.5613
+cap "dflipflop_rising_2_3/a_30_870#" "dflipflop_rising_2_3/a_n140_1360#" 69.4078
+cap "dflipflop_rising_2_1/a_n140_1360#" "dflipflop_rising_2_1/VP" -5.68434e-14
+cap "dflipflop_rising_2_1/a_n140_1360#" "dflipflop_rising_2_1/a_n20_1360#" 6.68462
+cap "dflipflop_rising_2_2/a_n20_1360#" "dflipflop_rising_2_2/a_n140_1360#" 13.3692
+cap "dflipflop_rising_2_2/VP" "dflipflop_rising_2_2/a_n140_1360#" 1.98952e-13
+cap "dflipflop_rising_2_2/VP" "dflipflop_rising_2_2/a_n20_1360#" 1.7053e-13
+cap "dflipflop_rising_2_1/a_n20_1360#" "dflipflop_rising_2_1/a_n140_1360#" 6.68462
+cap "dflipflop_rising_2_3/a_n140_1360#" "dflipflop_rising_2_3/a_n20_1360#" 13.3692
+cap "dflipflop_rising_2_3/a_n140_1360#" "dflipflop_rising_2_3/VP" 1.98952e-13
+cap "dflipflop_rising_2_2/a_n20_1360#" "dflipflop_rising_2_3/VP" -13.57
+merge "dflipflop_rising_2_3/VN" "dflipflop_rising_2_2/VN" -815.835 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 225600 -4896 0 0 0 0 0 0 0 0 0 0
+merge "dflipflop_rising_2_2/VN" "inverter_sreg_0/VN"
+merge "inverter_sreg_0/VN" "dflipflop_rising_2_0/VN"
+merge "dflipflop_rising_2_0/VN" "dflipflop_rising_2_1/VN"
+merge "dflipflop_rising_2_1/VN" "VSUBS"
+merge "dflipflop_rising_2_3/a_500_n20#" "Qout" -28.153 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5240 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dflipflop_rising_2_0/clk" "clk" -18.804 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27840 -180 0 0 0 0 0 0 0 0 0 0
+merge "clk" "dflipflop_rising_2_1/clk"
+merge "dflipflop_rising_2_1/clk" "dflipflop_rising_2_2/clk"
+merge "dflipflop_rising_2_2/clk" "dflipflop_rising_2_3/clk"
+merge "dflipflop_rising_2_3/Qb" "Qoutb" -6.671 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7860 -100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_sreg_0/A" "D" -80.977 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -360 -84 0 0 -16600 -156 0 0 0 0 0 0 0 0 0 0 0 0
+merge "D" "dflipflop_rising_2_0/a_n140_1360#"
+merge "dflipflop_rising_2_0/Qb" "dflipflop_rising_2_1/Db" -22.636 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -240 -80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dflipflop_rising_2_1/Qb" "dflipflop_rising_2_2/Db" 5.666 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10440 -80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_sreg_0/VP" "dflipflop_rising_2_0/VP" 179.588 0 0 0 0 216160 -3060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60820 -2820 0 0 0 0 0 0 0 0 0 0
+merge "dflipflop_rising_2_0/VP" "dflipflop_rising_2_1/VP"
+merge "dflipflop_rising_2_1/VP" "dflipflop_rising_2_2/VP"
+merge "dflipflop_rising_2_2/VP" "dflipflop_rising_2_3/VP"
+merge "dflipflop_rising_2_2/a_500_n20#" "dflipflop_rising_2_3/a_n140_1360#" -32.63 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dflipflop_rising_2_0/a_500_n20#" "dflipflop_rising_2_1/a_n140_1360#" -32.63 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dflipflop_rising_2_1/a_500_n20#" "dflipflop_rising_2_2/a_n140_1360#" -26.007 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6760 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_sreg_0/Y" "dflipflop_rising_2_0/Db" -27.831 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -540 -96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dflipflop_rising_2_2/Qb" "dflipflop_rising_2_3/Db" -22.795 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -300 -80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

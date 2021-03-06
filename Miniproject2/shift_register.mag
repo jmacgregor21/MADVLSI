@@ -1,0 +1,40 @@
+magic
+tech sky130A
+timestamp 1614987782
+<< poly >>
+rect 2030 90 2040 105
+rect -195 -100 -185 -85
+<< locali >>
+rect 2030 295 2040 315
+<< metal1 >>
+rect -25 -375 -15 -335
+use dflipflop_rising_2  dflipflop_rising_2_3 ~/Documents/Miniproject2
+timestamp 1614987782
+transform 1 0 1605 0 1 -295
+box -90 -80 435 800
+use dflipflop_rising_2  dflipflop_rising_2_2
+timestamp 1614987782
+transform 1 0 1090 0 1 -295
+box -90 -80 435 800
+use dflipflop_rising_2  dflipflop_rising_2_1
+timestamp 1614987782
+transform 1 0 575 0 1 -295
+box -90 -80 435 800
+use dflipflop_rising_2  dflipflop_rising_2_0
+timestamp 1614987782
+transform 1 0 60 0 1 -295
+box -90 -80 435 800
+use inverter_sreg  inverter_sreg_0
+timestamp 1614986124
+transform 1 0 -191 0 1 -70
+box -20 -35 185 380
+<< labels >>
+rlabel poly -195 -95 -195 -95 7 D
+port 1 w
+rlabel metal1 -25 -355 -25 -355 7 clk
+port 2 w
+rlabel locali 2040 305 2040 305 3 Qout
+port 3 e
+rlabel poly 2040 95 2040 95 3 Qoutb
+port 4 e
+<< end >>
