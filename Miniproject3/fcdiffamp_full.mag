@@ -1,0 +1,31 @@
+magic
+tech sky130A
+timestamp 1616346938
+<< poly >>
+rect -20 1420 350 1435
+rect -5 -600 10 1420
+rect -5 -615 380 -600
+rect -5 -1320 35 -1310
+rect -5 -1340 5 -1320
+rect 25 -1335 35 -1320
+rect 25 -1340 85 -1335
+rect -5 -1350 85 -1340
+<< polycont >>
+rect 5 -1340 25 -1320
+<< locali >>
+rect -5 -30 480 -10
+rect -5 -1310 15 -30
+rect 3825 -140 3850 970
+rect -5 -1320 35 -1310
+rect -5 -1340 5 -1320
+rect 25 -1340 35 -1320
+rect -5 -1350 35 -1340
+use fcdiffamp_layout  fcdiffamp_layout_0
+timestamp 1616346938
+transform 1 0 155 0 1 -1860
+box -70 -55 2220 1760
+use fc_bias  fc_bias_0
+timestamp 1616344227
+transform 1 0 375 0 1 25
+box -340 -55 3475 1865
+<< end >>
